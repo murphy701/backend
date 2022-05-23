@@ -10,6 +10,13 @@ public class book {
 	private int stock;
 	private String soldout;
 	
+	public book(int bookid, String category,  String name) {
+		this.bookid = bookid;
+		this.category=category;
+		this.name = name;
+	}
+	
+	
 	public int getBookid() {
 		return bookid;
 	}
