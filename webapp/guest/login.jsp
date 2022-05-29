@@ -38,7 +38,7 @@ function funcLogin(){
      }
 }
 function funcNew(){
-     location.href="../member/register.jsp";
+     location.href="../member/form.jsp";
 }
 </script>
 </head>
