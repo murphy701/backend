@@ -1,6 +1,10 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-
+<table style="width: 90%">
+     <tr>
+          <td style ="font-size: 24px">전문 쇼핑몰</td>
+          </tr>
+</table>
 <table style="width: 100%">
      <tr style="background-color:#F7BE81; text-align:center;">
 
