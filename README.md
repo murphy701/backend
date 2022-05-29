@@ -12,8 +12,8 @@ https://ko.wix.com/website/templates/html/online-store/books-publishers-템플�
 베스트 셀러 보기(db 연동 없이 검색옵션만)
 
 5-29일
-도서 등록하는 register.jsp구현
-login.jsp 경로에 맞게 변경
-회원가입하는 form.jsp 구현
-pom.xml추가
+도서 등록하는 register.jsp구현<br>
+login.jsp 경로에 맞게 변경<br>
+회원가입하는 form.jsp 구현<br>
+pom.xml추가<br>
 usercontroller.java, userDAO.java로 회원가입 동작처리(테스트 필요)
