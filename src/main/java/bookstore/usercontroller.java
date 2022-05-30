@@ -18,7 +18,7 @@ public class usercontroller extends HttpServlet {
 	
 	userDAO dao;
 	public void init(ServletConfig config) throws ServletException{
-		super.init(conifg);
+		super.init(config);
 		dao=new userDAO();
 	}
 	
