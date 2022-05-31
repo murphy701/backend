@@ -17,3 +17,6 @@ login.jsp 경로에 맞게 변경<br>
 회원가입하는 form.jsp 구현<br>
 pom.xml추가<br>
 usercontroller.java, userDAO.java로 회원가입 동작처리(테스트 필요)
+
+5-31일
+banner.jsp 추가, guest_login.jsp 변경
