@@ -9,6 +9,19 @@ https://ko.wix.com/website/templates/html/online-store/books-publishers-템플�
 결제하기
 회원정보 수정(db연동)
 
+첫페이지 구조 https://note.espriter.net/1177
+<br>
+간단구현 순서 https://ddingz.tistory.com/171
+<br>
+로그인 아이디 비번 확인 https://velog.io/@yseonjin/JSP-%EC%87%BC%ED%95%91%EB%AA%B0-%EA%B4%80%EB%A6%AC%ED%8E%98%EC%9D%B4%EC%A7%80-%EB%A7%8C%EB%93%A4%EA%B8%B0-%EC%97%B0%EC%8A%B5-8
+<br>
+관리자 상품등록 전체구조 https://blog.naver.com/PostView.nhn?isHttpsRedirect=true&blogId=tinatan&logNo=70165598811&parentCategoryNo=&categoryNo=23&viewDate=&isShowPopularPosts=false&from=postView
+<br>
+전체 회원 목록 https://florescene.tistory.com/58?category=963009
+<br>
+장바구니, 카테고리별 검색 https://velog.io/@jeong11/teamproject-jsp-shoppingmall-cartadmin
+<br>
+
 베스트 셀러 보기(db 연동 없이 검색옵션만)
 
 5-29일
