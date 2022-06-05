@@ -1,22 +1,26 @@
 package bookstore;
 
-public class book {
+public class book{
 	private int bookid;
 	private String category;
 	private String name;
 	private String writer;
-	private String descrip;
+	private String descript;
 	private int price;
 	private int stock;
 	private String soldout;
+	private String publisher;
+	private String releaseDate;
+	private String img;
 	
-	public book(int bookid, String category,  String name) {
-		this.bookid = bookid;
-		this.category=category;
-		this.name = name;
+	public book() {
+		super();
 	}
-	
-	
+	public book(int bookid, String name, String publisher) {
+		this.bookid = bookid;
+		this.name = name;
+		this.publisher = publisher;
+	}
 	public int getBookid() {
 		return bookid;
 	}
@@ -41,11 +45,11 @@ public class book {
 	public void setWriter(String writer) {
 		this.writer = writer;
 	}
-	public String getDescrip() {
-		return descrip;
+	public String getDescript() {
+		return descript;
 	}
-	public void setDescrip(String descrip) {
-		this.descrip = descrip;
+	public void setDescript(String descript) {
+		this.descript = descript;
 	}
 	public int getPrice() {
 		return price;
@@ -64,5 +68,23 @@ public class book {
 	}
 	public void setSoldout(String soldout) {
 		this.soldout = soldout;
+	}
+	public String getPublisher() {
+		return publisher;
+	}
+	public void setPublisher(String publisher) {
+		this.publisher = publisher;
+	}
+	public String getReleaseDate() {
+		return releaseDate;
+	}
+	public void setReleaseDate(String releaseDate) {
+		this.releaseDate = releaseDate;
+	}
+	public String getImg() {
+		return img;
+	}
+	public void setImg(String img) {
+		this.img = img;
 	}
 }
