@@ -31,10 +31,10 @@ login.jsp 경로에 맞게 변경<br>
 pom.xml추가<br>
 usercontroller.java, userDAO.java로 회원가입 동작처리(테스트 필요)
 
-5-31일
+5-31일<br>
 banner.jsp 추가, guest_login.jsp 변경
 
-6-5일
+6-5일<br>
 전체 파일 동기화<br>
 db의 userdb에서 usertype과 이름 삭제<br>
 userdb.java내용 변경<br>
