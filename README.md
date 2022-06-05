@@ -33,3 +33,10 @@ usercontroller.java, userDAO.java로 회원가입 동작처리(테스트 필요)
 
 5-31일
 banner.jsp 추가, guest_login.jsp 변경
+
+6-5일
+전체 파일 동기화<br>
+db의 userdb에서 usertype과 이름 삭제<br>
+userdb.java내용 변경<br>
+회원가입 db와 연동하여 구현<br>
+book등록에서 decrip을 descript로 수정<br>
