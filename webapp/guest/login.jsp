@@ -1,6 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-<% String id = (String)session.getAttribute("idKey"); %>
+<% String id = (String)session.getAttribute("id"); %>
 <!DOCTYPE html>
 <html>
 <head>
@@ -22,23 +22,15 @@ window.onload = function(){
      }
 
 }
-function funcLogin(){
-     if(loginForm.id.value === ""){
-          alert("아이디 입력!!!");
-          loginForm.id.focus();
-     }else{if(loginForm.passwd.value === ""){
-          alert("비번 입력!!!!");
-          loginForm.passwd.focus();
-          
-     }else{
-          loginForm.action ="loginproc.jsp";
-          loginForm.method="post";
-          loginForm.submit();
-     }    
-     }
-}
+
 function funcNew(){
-     location.href="../member/form.jsp";
+     location.href="../member/form.jsp";//회원가입
+}
+function funcLogin(){
+	
+        loginForm.action ="loginproc.jsp";
+        loginForm.method="post";
+        loginForm.submit();
 }
 </script>
 </head>
