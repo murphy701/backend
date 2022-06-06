@@ -40,3 +40,4 @@ db의 userdb에서 usertype과 이름 삭제<br>
 userdb.java내용 변경<br>
 회원가입 db와 연동하여 구현<br>
 book등록에서 decrip을 descript로 수정<br>
+로그인과 세션구현(세션은 제대로 동작하지 않는 것 같지만 로그인 되어있음)
