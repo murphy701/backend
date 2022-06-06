@@ -14,7 +14,7 @@
 	Connection conn = null;
 	PreparedStatement pstmt = null;
 	ResultSet rs = null;
-	String sql = "select id, pw from userdb";
+	String sql = "select * from userdb where id=? and pw=?";
 	
 	try{
 		// 드라이버 호출
@@ -32,9 +32,11 @@
 		
 		if(rs.next()){ // 로그인 성공(인증의 수단 session)
 			id = rs.getString("id");
-			pw = rs.getString("pw");
+			String name = rs.getString("pw");
+			
 			session.setAttribute("id", id);
 			session.setAttribute("pw", pw);
+			
 			response.sendRedirect("guest_index.jsp"); // 페이지이동
 			
 		} else{ // 로그인 실패
