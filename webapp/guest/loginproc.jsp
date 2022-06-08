@@ -40,7 +40,7 @@
 			response.sendRedirect("guest_index.jsp"); // 페이지이동
 			
 		} else{ // 로그인 실패
-			response.sendRedirect("loginError.jsp"); // 실패 페이지
+			response.sendRedirect("loginerror.jsp"); // 실패 페이지
 		}
 	} catch(Exception e){
 		e.printStackTrace();
