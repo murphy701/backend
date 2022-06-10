@@ -36,7 +36,7 @@ public class usercontroller extends HttpServlet {
 		Method m;
 		String view = null;
 		if(action==null) {
-			action="userdb";
+			action="insert";
 		}
 		try {
 			m=this.getClass().getMethod(action, HttpServletRequest.class);
