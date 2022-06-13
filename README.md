@@ -26,7 +26,7 @@ book등록에서 decrip을 descript로 수정<br>
 <br>
 6-8일<br>
 loginproc.jsp에서 에러날때 loginerror.jsp로 가게끔 설정
-<br>
+<br><hr>
 6-13일<br>
 파일 동기화<br>
 db변경(book테이블의 bookid, userdb테이블의 id를 cart 테이블의foreign key로 설정)<br>
