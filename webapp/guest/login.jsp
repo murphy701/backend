@@ -28,7 +28,7 @@ function funcNew(){
 }
 function funcLogin(){
 	
-        loginForm.action ="loginproc.jsp";
+        loginForm.action ="./loginproc.jsp";
         loginForm.method="post";
         loginForm.submit();
 }
@@ -43,7 +43,7 @@ if(id !=null){
      <a href="logout.jsp">로그아웃</a>
 <%}else{%>
      <form name="loginForm">
-     <table>
+     <table align="right">
           <tr>
           <td colspan="2"> * 회원 로그인 * </td>
           </tr>
