@@ -44,7 +44,7 @@
 		}
 	} catch(Exception e){
 		e.printStackTrace();
-		response.sendRedirect("loginError.jsp"); // 에러가 난 경우도 리다이렉트
+		response.sendRedirect("loginerror.jsp"); // 에러가 난 경우도 리다이렉트
 	} finally{
 		try{
 			if(conn != null) conn.close();
