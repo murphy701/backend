@@ -55,3 +55,4 @@ guest_top.jsp 경로 수정<br>
 회원가입한 다음 바로 로그인이 안됨<br>
 addbook과 register차이점을 <br>
 addbook.jsp동작안함<br>
+book.jsp, booklist.jsp 동작을 안해서 cart에 추가하는 테스트를 못하는 
