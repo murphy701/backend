@@ -31,7 +31,7 @@ loginproc.jsp에서 에러날때 loginerror.jsp로 가게끔 설정
 파일 동기화<br>
 db변경(book테이블의 bookid, userdb테이블의 id를 cart 테이블의foreign key로 설정)<br>
 create table userdb( id varchar(10) primary key not null, pw varchar(10) not null, call varchar(20), address varchar(50), email varchar(20) );<br>
-create table cart(cartid int not null primary key auto_increment, bookname varchar(30) not null, bookwriter varchar(30) not null, bookcount int not null, totalprice <br>int not null, id varchar(20));
+create table cart(cartid int not null primary key auto_increment, bookname varchar(30) not null, bookwriter varchar(30) not null, bookcount int not null, totalprice int not null, id varchar(20));
 alter table cart<br>
 add foreign key (bookid)<br>
 references book(bookid)<br>
