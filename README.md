@@ -1,19 +1,10 @@
 # backend
 https://www.polarisoffice.com/d/2RRaX968
 https://ko.wix.com/website/templates/html/online-store/books-publishers-템플릿 제작
-      -----구현 목록-------
-도서등록
-전체 도서 목록 보기(db연동)
-장바구니
-로그인/회원가입
-결제하기
-회원정보 수정(db연동)
 
 첫페이지 구조 https://note.espriter.net/1177
 <br>
 간단구현 순서 https://ddingz.tistory.com/171
-<br>
-로그인 아이디 비번 확인 https://velog.io/@yseonjin/JSP-%EC%87%BC%ED%95%91%EB%AA%B0-%EA%B4%80%EB%A6%AC%ED%8E%98%EC%9D%B4%EC%A7%80-%EB%A7%8C%EB%93%A4%EA%B8%B0-%EC%97%B0%EC%8A%B5-8
 <br>
 관리자 상품등록 전체구조 https://blog.naver.com/PostView.nhn?isHttpsRedirect=true&blogId=tinatan&logNo=70165598811&parentCategoryNo=&categoryNo=23&viewDate=&isShowPopularPosts=false&from=postView
 <br>
@@ -21,15 +12,6 @@ https://ko.wix.com/website/templates/html/online-store/books-publishers-템플�
 <br>
 장바구니, 카테고리별 검색 https://velog.io/@jeong11/teamproject-jsp-shoppingmall-cartadmin
 <br>
-
-베스트 셀러 보기(db 연동 없이 검색옵션만)
-
-5-29일
-도서 등록하는 register.jsp구현<br>
-login.jsp 경로에 맞게 변경<br>
-회원가입하는 form.jsp 구현<br>
-pom.xml추가<br>
-usercontroller.java, userDAO.java로 회원가입 동작처리(테스트 필요)
 
 5-31일<br>
 banner.jsp 추가, guest_login.jsp 변경
@@ -44,4 +26,32 @@ book등록에서 decrip을 descript로 수정<br>
 <br>
 6-8일<br>
 loginproc.jsp에서 에러날때 loginerror.jsp로 가게끔 설정
+<br>
+6-13일<br>
+파일 동기화<br>
+db변경(book테이블의 bookid, userdb테이블의 id를 cart 테이블의foreign key로 설정)<br>
+create table userdb( id varchar(10) primary key not null, pw varchar(10) not null, call varchar(20), address varchar(50), email varchar(20) );<br>
+create table cart(cartid int not null primary key auto_increment, bookname varchar(30) not null, bookwriter varchar(30) not null, bookcount int not null, totalprice <br>int not null, id varchar(20));
+alter table cart<br>
+add foreign key (bookid)<br>
+references book(bookid)<br>
 
+alter table cart<br>
+add foreign key (id)<br>
+references userdb(id)<br>
+
+alter table cart<br>
+add foreign key (bookid)<br>
+references book(bookid)<br>
+cart테이블의 id는 userdb id와 일치해야 함<br>
+
+cart.java id추가<br>
+cartDAO.java<br>
+cart.jsp구현<br>
+login.jsp수정<br>
+guest_top.jsp 경로 수정<br>
+
+<br><br>문제점<br>
+회원가입하고 로그인 안됨<br>
+addbook과 register차이점?<br>
+addbook.jsp동작안함<br>
