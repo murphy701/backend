@@ -52,6 +52,6 @@ login.jsp수정<br>
 guest_top.jsp 경로 수정<br>
 
 <br><br>문제점<br>
-회원가입하고 로그인 안됨<br>
-addbook과 register차이점?<br>
+회원가입한 다음 바로 로그인이 안됨<br>
+addbook과 register차이점을 <br>
 addbook.jsp동작안함<br>
