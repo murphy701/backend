@@ -1,11 +1,13 @@
 package bookstore;
 
 public class cart {
-	private int bookid;
-	private String bookname;
-	private String bookwriter;
-	private int bookcount;
-	private int totalprice;
+	private int cartid;
+	private int bookid;//번호
+	private String bookname;//책 이름
+	private String bookwriter;//작가
+	private int bookcount;//주문 수량
+	private int totalprice;//가격
+	private String id;
 	public int getBookid() {
 		return bookid;
 	}
@@ -36,4 +38,17 @@ public class cart {
 	public void setTotalprice(int totalprice) {
 		this.totalprice = totalprice;
 	}
+	public String getId() {
+		return id;
+	}
+	public void setId(String id) {
+		this.id = id;
+	}
+	public int getCartid() {
+		return cartid;
+	}
+	public void setCartid(int cartid) {
+		this.cartid = cartid;
+	}
+	
 }
