@@ -48,7 +48,7 @@ public class cartDAO {
 		try {
 			Connection conn=open();
 			String sql =
-					"INSERT INTO cart(cartid, bookid, bookname, bookwriter, bookcount, totalprice) values(?,?,?,?,?,?)";
+			"INSERT INTO cart(cartid, bookid, bookname, bookwriter, bookcount, totalprice) values(?,?,?,?,?,?)";
 			pstmt=conn.prepareStatement(sql);
 			pstmt.setInt(1, cart.getBookid());
 			pstmt.setString(2,  cart.getBookname());
