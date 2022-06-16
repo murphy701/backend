@@ -50,9 +50,14 @@ cartDAO.java<br>
 cart.jsp구현<br>
 login.jsp수정<br>
 guest_top.jsp 경로 수정<br>
-
-<br><br>문제점<br>
-회원가입한 다음 바로 로그인이 안됨<br>
-addbook과 register차이점을 <br>
-addbook.jsp동작안함<br>
-book.jsp, booklist.jsp 동작을 안해서 cart에 추가하는 테스트를 못하는 
+<hr>
+6월17일<br>
+book.jsp의 action변경<br>
+cart.jsp변경<br>
+bookstore에 있는 cart클래스, 서블릿 수<br>
+https://upcake.tistory.com/264 (cart 자료)
+<br><br>문제점
+회원가입 후 바로 로그인 할 때 동작안됨<br>
+addbook.jsp, register.jsp 기능의 차이점을 모르겠음<br>
+bookcontroller.java에 getbook, listbooks 차이점은?<br>
+book의 정보를 읽고 db에 입력하는 방법?
