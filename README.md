@@ -52,7 +52,6 @@ login.jsp수정<br>
 guest_top.jsp 경로 수정<br>
 <hr>
 6월17일<br>
-book.jsp의 action변경<br>
 cart.jsp변경<br>
 bookstore에 있는 cart클래스, 서블릿 수<br>
 https://upcake.tistory.com/264 (cart 자료)
@@ -61,3 +60,6 @@ https://upcake.tistory.com/264 (cart 자료)
 addbook.jsp, register.jsp 기능의 차이점을 모르겠음<br>
 bookcontroller.java에 getbook, listbooks 차이점은?<br>
 book의 정보를 읽고 db에 입력하는 방법?
+<br>
+6월 18<br>
+book.jsp 
