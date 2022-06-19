@@ -63,39 +63,33 @@
 		<div>
 			<table class="table table-hover">
 				<tr>
-					<th class="text-center">도서</th>
-					<th class="text-center">#</th>
-					<th class="text-center">가격</th>
-					<th class="text-center">소계</th>
+					<th class="text-center">카트 번호</th>
+					<th class="text-center">책 제목</th>
+					<th class="text-center">작가</th>
+					<th class="text-center">주문 수량</th>
+					<th class="text-center">총 가격</th>
 				</tr>
-				<%
-					int sum = 0;
-					ArrayList<book> cartList = (ArrayList<book>) session.getAttribute("cartlist");
-					if (cartList == null)
-						cartList = new ArrayList<book>();
-					for (int i = 0; i < cartList.size(); i++) { // 도서 리스트 하니씩 출력하기
-						book book = cartList.get(i);
-				%>
-				<tr>
-					<td class="text-center"><em><%=book.getName()%></em></td>
-				</tr>
-				<%
-					}
-				%>
+				<tr class="select" align= 'center'>
+				<td>1</td>
+				<td>어느 날, 내 죽음에 네가 들어왔다</td>
+				<td>세이카 료겐</td>
+				<td>1</td>
+				<td>13500</td>
+				<tr class="another" align='center'>
+				<td>2</td>
+				<td>소문</td>
+				<td>오기와라 히로시</td>
+				<td>2</td>
+				<td>29700</td>
 				<tr>
 					<td></td>
 					<td></td>
 					<td class="text-right"><strong>총액: </strong></td>
-					<td class="text-center text-danger"><strong><%=sum%></strong></td>
+					<td class="text-center text-danger"><strong>57000원</strong></td>
 				</tr>
 			</table>
-
-			<a href="./shippingInfo.jsp?cartId=<%=shipping_cartId%>"
-				class="btn btn-secondary" role="button">이전</a>
-			<a href="./thankCustomer.jsp" class="btn btn-success"
+			<a href="http://localhost:8080/jwbook/guest/guest_index.jsp" class="btn btn-success"
 				role="button">주문완료</a>
-			<a href="./checkOutCancelled.jsp" class="btn btn-secondary"
-				role="button">취소</a>
 		</div>
 	</div>
 </body>
