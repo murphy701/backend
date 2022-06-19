@@ -14,6 +14,6 @@
           <td><a href="http://localhost:8080/jwbook/book?acton=listBooks">도서 목록</a></td>
           <td><a href="http://localhost:8080/jwbook/guest/register.jsp">도서 등록</a></td>
           <td><a href="http://localhost:8080/jwbook/cart/cart.jsp">장바구니</a></td>
-          <td><a href="/oderlist.jsp">주문 내역</a></td>
+          <td><a href="http://localhost:8080/jwbook/cart/order.jsp">주문 내역</a></td>
      </tr>
 </table>
