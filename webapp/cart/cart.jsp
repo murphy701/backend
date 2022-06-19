@@ -10,7 +10,8 @@
 <!DOCTYPE html>
 <html>
 <head>
-<link rel="stylesheet" href="/css/bootstrap.min.css" />
+<link rel="Stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 <title>장바구니</title>
 <script type="text/javascript">
 function fnClear(){
@@ -22,9 +23,8 @@ function fnClear(){
 </head>
 <body>
 	<jsp:include page="../guest/guest_top.jsp" />
-	
 <div align="center" class="rows">
-	<h3>[장바구니 보기]</h3>
+	<h3>장바구니 보기</h3>
 	<table border="1">
 		<tr>
 			<th>카트 번호</th>
@@ -33,27 +33,22 @@ function fnClear(){
 			<th>주문 수량</th>
 			<th>총 가격</th>
 		</tr>
-		<%
-		ArrayList<cart> rows;
-				cart cart= new cart();
-				out.println("<tr align= 'center'>");
-					out.println("<td>" + cart.getCartid() + "</td>");
-					out.println("<td>" + cart.getBookname() + "</td>");
-					out.println("<td>" + cart.getBookwriter() + "</td>");
-					out.println("<td>" + cart.getBookcount()+ "</td>");
-					out.println("<td>" + cart.getTotalprice() + "</td>");
-				out.println("</tr>");
-
-		out.println("<tr align = 'center'>");
-			out.println("<td colspan= '3'>");
-				out.println("<input type='button' value='결제하기' />");
-				out.println("<input type='button' value='장바구니 비우기' onclick='fcClear()' />");
-				out.println("<input type='button' value='쇼핑 계속하기 action=../guest/booklist.jsp'/>");
-			out.println("</td>");
-			out.println("<td>");
-			out.println("</td>");
-		out.println("</tr>");
-		%>
+		<c:forEach var="cart" items="${cartlist}" varStatus="status">
+			<tr align= 'center'>
+				<td>${cart.cartid}</td>
+				<td>${cart.name}</td>
+				<td>${cart.bookwriter}</td>
+				<td>${cart.bookcount}</td>
+				<td>${cart.totalprice}</td>
+			</tr>
+		</c:forEach>
+		<tr align = 'center'>
+			<td colspan= '3'>
+				<input type='button' value='결제하기' onclick="window.location='shippinginfo.jsp'"/>
+				<input type='button' value='장바구니 비우기' onclick='fcClear()' />
+				<input type='button' value='쇼핑 계속하기' action='../guest/booklist.jsp'/>
+			</td>
+		</tr>
 	</table>
 </div>
 </body>
