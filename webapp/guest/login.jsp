@@ -4,6 +4,9 @@
 <!DOCTYPE html>
 <html>
 <head>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 <meta charset="UTF-8">
 <title>회원 로그인</title>
 <link href="../css/style.css" rel="stylesheet" type="text/css">
@@ -28,7 +31,7 @@ function funcNew(){
 }
 function funcLogin(){
 	
-        loginForm.action ="./loginproc.jsp";
+        loginForm.action ="http://localhost:8080/jwbook/guest/loginproc.jsp";
         loginForm.method="post";
         loginForm.submit();
 }
@@ -38,9 +41,11 @@ function funcLogin(){
 <%
 if(id !=null){
 %>
+	<div align="right">
      <b><%=id %></b>님 환영합니다<p/>
      준비된 기능을 사용할 수 있습니다.
      <a href="logout.jsp">로그아웃</a>
+     </div>
 <%}else{%>
      <form name="loginForm">
      <table align="right">
@@ -57,8 +62,8 @@ if(id !=null){
           </tr>
           <tr>
               <td colspan="2">
-                   <input type="button" value="로 그 인" id="btnLogin">
-                   <input type="button" value="회원가입" id="btnNewMember">
+                   <input type="button" value="로 그 인" id="btnLogin" class="btn btn-dark">
+                   <input type="button" value="회원가입" id="btnNewMember" class="btn btn-dark">
                    </td>
      </table>
      </form>
