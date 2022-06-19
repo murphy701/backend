@@ -5,9 +5,12 @@
 <%@page import="bookstore.cart"%>
 <%@page import="bookstore.cartDAO"%>
 <%@page import="java.util.ArrayList"%>
+<%@page import="bookstore.userdb" %>
+<%@page import="bookstore.userDAO" %>
 <!DOCTYPE html>
 <html>
 <head>
+
 <meta charset="UTF-8">
 <title>도서 상세 정보</title>
 <link rel="Stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
@@ -17,7 +20,7 @@
 <body>
 	<%@ include file="guest_top.jsp" %>
 	<div class="jumbotron">
-		<div class="container">
+		<div class="container ">
 			<h1>도서 정보</h1>
 		</div>
 	</div>
@@ -35,10 +38,11 @@
 				<p><b>출판일</b> : ${book.releaseDate}</p>
 				<p><b>도서 재고</b> : ${book.stock}</p><br>
 				<h4>${book.price} 원</h4><br>
-				<p><a href="cart?action=insertCart" class="btn btn-info">장바구니 &raquo;</a> 
+
+				<p><a href="http://localhost:8080/jwbook/cart/cart.jsp" class="btn btn-info">장바구니 &raquo;</a> 
 				<a href="book?acton=listBook" class="btn btn-secondary">전체도서 &raquo;</a></p><br>
 			</div>
-		<br><hr></div>
+		<br></div>
 	</div>
 	<%@ include file="guest_bottom.jsp" %>   
 </body>
