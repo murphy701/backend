@@ -1,6 +1,6 @@
 # backend
 <br>
-https://github.com/hjnam0117/team2<br>
+full code in here-https://github.com/hjnam0117/team2<br>
 <br>계획서:
 https://www.polarisoffice.com/d/2RRaX968
 
